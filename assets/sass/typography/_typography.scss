@@ -26,16 +26,16 @@ article.post p {
   margin-top: 10px;
 }
 
-.single-post {
+/*.single-post { // not suitable for arabic
   div.entry-content > p:first-child:first-letter {
-    float: left;
+    float: right;
     font-size: 86px;
     line-height:75px;
     text-align: left;
     padding-right: 15px;
     display: inline-block;
   }
-}
+}*/
 
 a {
   color: $color_main-accent;

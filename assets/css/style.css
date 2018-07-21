@@ -61,13 +61,14 @@ article.post p {
   line-height: 25px;
   margin-top: 10px; }
 
+/* // not suitable for arabic
 .single-post div.entry-content > p:first-child:first-letter {
-  float: left;
+  float: right;
   font-size: 86px;
   line-height: 75px;
   text-align: left;
   padding-right: 15px;
-  display: inline-block; }
+  display: inline-block; }*/
 
 a {
   color: #0a396d;
