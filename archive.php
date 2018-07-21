@@ -16,34 +16,19 @@ get_header(); ?>
 $banner_count = get_theme_mod( 'newspaper_x_show_banner_after', 6 );
 $archive      = newspaper_x_check_archive();
 $first_posts  = newspaper_x_get_first_posts( $archive );
+
 global $wp_query;
 
-if ( $first_posts->have_posts() ):
-	?>
-	<div class="row">
-		<header class="col-xs-12">
-			<?php
-			the_archive_title( '<h3 class="page-title"><span>', '</span></h3>' );
-			the_archive_description( '<div class="taxonomy-description">', '</div>' );
-			?>
-		</header><!-- .page-header -->
-	</div>
-	<div class="row">
-		<div class="col-xs-12 newspaper-x-archive-first-posts">
-			<div class="row">
-				<?php while ( $first_posts->have_posts() ) : $first_posts->the_post(); ?>
-
-					<div class="col-md-6">
-						<?php
-						get_template_part( 'template-parts/content', get_post_format() );
-						?>
-					</div>
-
-				<?php endwhile; ?>
-			</div>
-		</div>
-	</div>
-<?php endif; ?>
+?>
+<div class="row">
+	<header class="col-xs-12">
+		<?php
+		the_archive_title( '<h3 class="page-title"><span>', '</span></h3>' );
+		the_archive_description( '<div class="taxonomy-description">', '</div>' );
+		?>
+	</header><!-- .page-header -->
+</div>
+<?php ?>
 	<div class="row">
 		<div id="primary" class="newspaper-x-content newspaper-x-archive-page col-lg-8 col-md-8 col-sm-12 col-xs-12">
 			<main id="main" class="site-main" role="main">
