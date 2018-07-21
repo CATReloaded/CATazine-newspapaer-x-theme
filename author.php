@@ -23,7 +23,12 @@ $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : g
         <!-- Short Description -->
         <p><?php echo $curauth->user_description; ?></p>
     </div>
-    <?php Newspaper_X_Profile_Fields::echo_social_media(); ?>
+    <?php
+    /*
+    * Newspaper_X_Profile_Fields::echo_social_media();
+    * doen't display the correct user as it should be inside loop of posts
+    */
+    ?> 
 </div>
 
 <div class="row">
