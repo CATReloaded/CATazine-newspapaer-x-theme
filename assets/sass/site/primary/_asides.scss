@@ -7,3 +7,9 @@
 #secondary {
   margin-top: 20px;
 }
+
+@media (max-width: 770px) {
+
+  #secondary {clear: both;}
+
+}

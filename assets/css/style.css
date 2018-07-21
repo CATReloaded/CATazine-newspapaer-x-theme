@@ -3183,3 +3183,9 @@ object {
   display: block; }
 
 /*# sourceMappingURL=style.css.map */
+
+@media (max-width: 770px) {
+
+  #secondary {clear: both;}
+
+}
