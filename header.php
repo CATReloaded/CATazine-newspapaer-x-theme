@@ -7,10 +7,13 @@
  * @link    https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package Newspaper X
+ * 
+ * Add zero margin to HTML
+ * by: Nahla Galal
  */
 
 ?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> style="margin: 0 !important">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,6 +33,7 @@
 
 	  gtag('config', 'UA-122325243-1');
 	</script>
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/navigation.js"></script>
 
 	
 </head>

@@ -1,78 +1,96 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
+// Change footer styles
+// by: Nahla Galal
 // -----------------------------------------------------------------------------
 /* Footer */
-#colophon {
-  background-color: #001228;
-  margin-top: 30px;
-}
-
-.site-info {
-  background-color: #000f20;
-  padding: 15px 0;
-  *, a {
-    font-size: 15px;
-    color: #fff;
-    font-family: $font__main;
+.Footer {
+  margin-top: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 24px;
+  background-color: $black-color;
+  padding-top: 46px;
+  padding-bottom: 16px;
+  color: $light-text-color;
+  font-size: 14px;
+  @media screen and(min-width: 875px) {
+    grid-template-columns: repeat(4, 1fr);
+    div {
+      margin: 0 auto;
+    }
   }
-  #footer-navigation{
-    ul{
-      margin:0px;
+  @media screen and(min-width: 480px) and (max-width: 874px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  h2 {
+    font-size: 18px;
+    color: $light-text-color;
+  }
+
+  &__about-CAT {
+    p {
+      margin-top: 8px;
+    }
+  }
+
+  &__discover-team {
+    ul {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: 80px 80px;
+      column-gap: 16px;
+      list-style-position: inside;
+      a {
+        color: $light-text-color;
+      }
+    }
+  }
+
+  &__location {
+    p {
+      margin-top: 16px;
+    }
+  }
+
+  &__contact {
+    ul {
+      margin-top: 16px;
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
       li {
-        display:inline;
-        margin-left: 30px;
+        margin-bottom: 8px;
+        a {
+          display: block;
+          width: 30px;
+          height: 30px;
+          background-color: $light-text-color;
+          border-radius: 50%;
+          &:hover {
+            background-color: $white-color;
+          }
+        }
+        &.github a {
+          background-color: transparent;
+          background-image: url("../images/github.svg");
+          &:hover {
+            background-image: url("../images/github-white.svg");
+          }
+        }
+        &:not(:last-of-type) {
+          margin-right: 4px;
+        }
       }
     }
   }
-}
 
-.back-to-top-area {
-    display:block;
-  a {
+  > p {
     font-size: 12px;
-    color: #f1f1f1;
-    line-height: 25px;
-    font-family: $font__main;
-    float: right;
-    position: relative;
-    right: -120px;
-    background: #001d3e;
-    padding: 10px 31px 11px 36px;
-    font-weight: 700;
-    @media (max-width: 1400px) {
-      span{
-        display:none;
-      }
-      padding: 6px;
-      font-size: 23px;
-      text-align: center;
-      height: 35px;
-      width: 35px;
-      right: -35px;
-      line-height: 25px;
-      i{
-        padding-left: 5px;
-        padding-right: 3px;
-      }
-    }
-    @media (max-width: 768px) {
-      position:relative;
-      float:none;
-      margin:0px;
-      right:0px;
-      display: inline-block;
-    }
-  }
-  i {
-    padding-left: 7px;
-  }
-}
-
-.site-footer {
-  > .widgets-area {
-    padding: 10px 0 0 0;
-    @media (max-width: 990px) {
-      padding: 30px 0px;
+    margin-top: 16px;
+    a {
+      color: $light-text-color;
+      margin-left: 8px;
     }
   }
 }

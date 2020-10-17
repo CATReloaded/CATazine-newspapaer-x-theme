@@ -5,53 +5,29 @@
  * @link    https://codex.wordpress.org/Template_Hierarchy
  *
  * @package Newspaper X
+ * 
+ * Add CAT website Navbar
+ * by: Nahla Galal
  */
-
 ?>
-<div class="top-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8">
-				<?php $news_ticker = get_theme_mod( 'newspaper_x_enable_news_ticker', true ); ?>
-				<?php if ( $news_ticker ) {
-					get_template_part( 'template-parts/news-ticker' );
-				} ?>
-            </div>
-			<?php $has_menu = has_nav_menu( 'social' ); ?>
-            <div class="col-lg-4">
-				<?php
-				$enable_search = get_theme_mod( 'newspaper_x_enable_top_bar_search', true );
-				if ( $enable_search ): ?>
-					<?php $search_query = get_search_query(); ?>
-					<?php get_search_form();?>
-				<?php endif; ?>
-				<?php
-				$class = 'menu pull-right';
 
-				if ( has_nav_menu( 'social' ) ) { ?>
-                    <div class="top-header-icons">
-						<?php
-						wp_nav_menu(
-							array(
-								'theme_location'  => 'social',
-								'container'       => 'div',
-								'container_id'    => 'menu-social',
-								'container_class' => $class,
-								'menu_id'         => 'menu-social-items',
-								'menu_class'      => 'menu-items',
-								'depth'           => 1,
-								'link_before'     => '<span class="screen-reader-text">',
-								'link_after'      => '</span>',
-								'fallback_cb'     => '',
-							)
-						);
-						?>
-                    </div>
-					<?php
-				}
-				?>
-
-            </div>
-        </div>
-    </div>
-</div>
+<nav class="wide-container Navbar">
+    <!-- Logo -->
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="CAT Reloaded logo">
+    <!-- Navigation items -->
+    <ul>
+      <li><a href="/home.html">Home</a></li>
+      <li class="active"><a href="/CATazine">CATazine</a></li>
+      <li><a href="<?php echo get_template_directory_uri(); ?>/events">Hall Of Fame</a></li>
+      <li><a href="<?php echo get_template_directory_uri(); ?>/members">Members</a></li>
+      <li><a href="<?php echo get_template_directory_uri(); ?>/rewards">Rewards</a></li>
+      <li><a href="<?php echo get_template_directory_uri(); ?>/about">About Us</a></li>
+    </ul>
+    <!-- Navigation hamburger menu for responsive -->
+    <button class="Navbar__hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+  <!-- End Navbar -->

@@ -7,56 +7,59 @@
  * @link    https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package Newspaper X
+ * 
+ * Add CAT website footer 
+ * by: Nahla Galal
  */
 
 ?>
-</div><!-- #content -->
-
-<footer id="colophon" class="site-footer" role="contentinfo">
-
-    <?php get_sidebar( 'footer' ) ?>
-
-    <?php $go_top = get_theme_mod( 'newspaper_x_enable_go_top', true ); ?>
-    <?php if ( $go_top ): ?>
-        <div class="back-to-top-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <a href="javascript:void(0)" id="back-to-top">
-                            <span><?php echo esc_html__( 'Go Up', 'newspaper-x' ) ?></span>
-                            <i class="fa fa-angle-up" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <?php endif; ?>
-
-    <?php $go_top = get_theme_mod( 'newspaper_x_enable_copyright', true ); ?>
-    <?php if ( $go_top ): ?>
-        <div class="site-info ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <?php
-                        $default = sprintf( __( '&copy; %1$s Newspaper-X a theme by <a href="%2$s">Colorlib</a>', 'newspaper-x' ), date( "Y" ), 'https://colorlib.com' );
-
-                        $copyright = get_theme_mod( 'newspaper_x_copyright_contents' );
-                        echo empty( $copyright ) ? wp_kses_post( $default ) : wp_kses_post( $copyright );
-                        ?>
-
-                        <nav id="footer-navigation" class="pull-right text-right hidden-xs">
-                            <?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'depth' => 1 ) ); ?>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div><!-- .site-info -->
-    <?php endif; ?>
-</footer><!-- #colophon -->
-</div><!-- #page -->
-
-<?php wp_footer(); ?>
-
+</div>
+  <!-- Start Footer -->
+  <footer class="wide-container Footer">
+    <!-- About CAT part -->
+    <div class="Footer__about-CAT">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/full-logo.svg" alt="CAT Reloaded logo">
+      <p>"CAT" is a non-profit foundation focused on Computer Science and IT specially Open Source technologies</p>
+    </div>
+    <!-- Discover team part -->
+    <div class="Footer__discover-team">
+      <h2>Discover Our Team</h2>
+      <ul>
+        <li><a href="<?php echo get_template_directory_uri(); ?>/home">Home</a></li>
+        <li><a href="/CATazine">CATazine</a></li>
+        <li><a href="<?php echo get_template_directory_uri(); ?>/events">Hall Of Fame</a></li>
+        <li><a href="<?php echo get_template_directory_uri(); ?>/members">Members</a></li>
+        <li><a href="<?php echo get_template_directory_uri(); ?>/rewards">Rewards</a></li>
+        <li><a href="<?php echo get_template_directory_uri(); ?>/about">About Us</a></li>
+      </ul>
+    </div>
+    <!-- Location part -->
+    <div class="Footer__location">
+      <h2>Location</h2>
+      <p>Faculty of Engineering, Mansoura University, Mansoura, Egypt</p>
+    </div>
+    <!-- Social media part -->
+    <div class="Footer__contact">
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="https://www.facebook.com/CATReloaded"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" alt="Facebook page"></a>
+        </li>
+        <li><a href="https://twitter.com/CATReloaded"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/twitter.svg" alt="Twitter account"></a></li>
+        <li><a href="https://www.instagram.com/catreloaded/?hl=en"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg"
+              alt="Instagram account"></a></li>
+        <li><a href="https://www.youtube.com/channel/UCJaNoxBopnEOli2mI7PTlgg"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/youtube.svg"
+              alt="Youtube channel"></a></li>
+        <li><a href="https://www.linkedin.com/company/cat-reloaded/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/linkedin.svg"
+              alt="Linkedin profile"></a></li>
+        <li class="github"><a href="https://github.com/CATReloaded"></a></li>
+        <li><a href="mailto:catreloaded-community@googlegroups.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/google+.svg"
+              alt="Google+ mail"></a></li>
+      </ul>
+    </div>
+    <!-- Copyrights -->
+    <p>&copy; Copyright 2020<a href="#">Privacy</a><a href="#">Terms</a><a href="#">FAQ</a></p>
+  </footer>
+  <!-- End Footer -->
+</div>
 </body>
 </html>
