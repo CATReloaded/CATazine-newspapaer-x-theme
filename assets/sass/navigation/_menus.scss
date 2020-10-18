@@ -1,6 +1,9 @@
 /**
 / Underscores default styling
 */
+
+// Change blue color to main color (red)
+// by: Nahla Galal
 .main-navigation {
   clear: both;
   display: block;
@@ -209,7 +212,7 @@
       line-height: 57px;
       &.current-menu-item,
       &:hover {
-          border-top: 3px solid $color_main-accent;
+          border-top: 3px solid $main-color;
           margin-top: -3px;
           top:1px;
         > a {
@@ -219,6 +222,7 @@
       > a {
         position: relative;
         text-align:center;
+        color: $text-color;
         &:after {
           position: absolute;
           bottom: -1px;

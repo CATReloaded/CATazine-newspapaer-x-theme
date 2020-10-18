@@ -1,3 +1,6 @@
+// Change margin of .entry-header and Change blue color to main color (red)
+// by: Nahla Galal
+
 .sticky {
   display: block;
 }
@@ -16,6 +19,7 @@
 .entry-content,
 .entry-summary {
   margin: 10px 0 0;
+  color: $text-color;
 }
 
 .page-links {
@@ -25,7 +29,7 @@
 
 .single-post, .page {
   .entry-header {
-    margin: 30px 0;
+    margin: 10px 0;
     img {
       width: 100%;
     }
@@ -33,14 +37,14 @@
 
   .entry-title {
     margin-top: 30px;
-    color: $color_text-color;
+    color: $black-color;
   }
   .entry-content{
+    color: $text-color;
     .archive{
       color:#8b8d91;
     }
     p:first-of-type{
-      color: $color_text-color;
       border-bottom: 1px dotted #bababa;
       padding-bottom: 20px;
     }
@@ -64,14 +68,15 @@
       padding: 3px 7px 3px 10px;
       line-height:25px;
       font-weight: 400;
-      background: #0a396d;
+      background: $main-color;
       a{
         color: #fff;
         font-size: 13px;
         font-family: $font__main;
+        transition: $transition;
       }
       &:hover {
-        background: $color_contrast-hover;
+        background: $red-alpha;
       }
     }
     .newspaper-x-date{
@@ -80,7 +85,7 @@
       margin-left: 13px;
       font-size:12px;
       font-family: $font__main;
-      color: #bfbfbf;
+      color: $text-color;
     }
   }
 }
@@ -100,14 +105,15 @@
       padding: 3px 7px 3px 10px;
       line-height:25px;
       font-weight: 400;
-      background: #0a396d;
+      background: $main-color;
       a{
         color: #fff;
         font-size: 13px;
         font-family: $font__main;
+        transition: $transition;
       }
       &:hover {
-        background: $color_contrast-hover;
+        background: $red-alpha;
       }
     }
     .newspaper-x-date{
@@ -152,13 +158,15 @@
 /* Author box styling */
 .author-description{
   border: 1px solid #ebebeb;
+  border-radius: 20px;
   display: flex;
   margin:36px 0;
   .avatar{
     width:20%;
     float:left;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    align-self: center;
     img{
       border-radius:150px;
     }
@@ -175,7 +183,7 @@
     }
     p{
       margin-bottom:40px;
-      color:#8b8d91;
+      color: $text-color;
       font-size: 14px;
       line-height:20px;
     }
@@ -193,7 +201,7 @@
       margin-bottom:25px;
       list-style:none;
       a{
-        color:#ebebeb;
+        color:$text-color;
         font-size:11px;
         margin-top:20px;
 
@@ -268,9 +276,10 @@
         text-transform: uppercase;
         font-size: 17px;
         font-weight: 700;
-        color: $color_text-color;
+        color: $black-color;
+        transition: $transition;
         &:hover{
-          color:$color_contrast-hover;
+          color:$main-color;
         }
       }
     }

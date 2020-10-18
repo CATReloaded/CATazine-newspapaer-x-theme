@@ -1,13 +1,15 @@
+// Change colors
+// by: Nahla Galal
 a {
-  color: $color__link;
+  color: $main-color;
 
   &:visited {
-    color: $color__link-visited;
+    color: $red-alpha;
   }
   &:hover,
   &:focus,
   &:active {
-    color: $color__link-hover;
+    color: $red-alpha;
   }
   &:focus {
     outline: thin dotted;

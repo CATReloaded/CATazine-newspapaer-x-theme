@@ -1,3 +1,6 @@
+// Change input and selectbox styles
+// by: Nahla Galal
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -14,16 +17,18 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-  color: $color__text-input;
-  border: 1px solid $color__border-input;
+  outline: 0.01px;
+  color: $text-color;
+  border: 1px solid $light-text-color;
   font-size: 15px;
   &:focus {
-    color: $color__text-input-focus;
+    color: $black-color;
   }
 }
 
 select {
-  border: 1px solid $color__border-input;
+  outline: 0.01px;
+  border: 1px solid $light-text-color;
 }
 
 input[type="text"],
@@ -64,7 +69,8 @@ textarea {
 }
 
 #searchform {
-    border: 1px solid #e1e1e1;
+    border-radius: 20px;
+    border: 1px solid $light-text-color;
     display: inline-block;
     width: 100%;
     @media (max-width: 361px) {
@@ -93,7 +99,8 @@ textarea {
       font-weight: 400;
       top: 0;
       border:none;
-      border-radius: 0;
+      border-radius: 20px;
+      left: 16px;
       @media (max-width: 1199px) {
         width: 200px;
       }
@@ -161,7 +168,7 @@ textarea {
 
 
 #cat {
-  padding: 10px;
-  border-radius: 3px;
-
+  padding: 10px 16px;
+  border-radius: 20px;
+  width: 100%;
 }

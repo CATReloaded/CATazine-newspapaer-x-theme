@@ -54,7 +54,7 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding container">
 			<div class="row">
-				<div class="col-md-4 header-logo">
+				<div class="col-md-8 header-logo">
 					<?php
 					$header_textcolor = get_theme_mod( 'header_textcolor' );
 					if ( function_exists( 'the_custom_logo' ) ) {

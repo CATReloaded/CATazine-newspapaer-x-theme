@@ -7,12 +7,18 @@
 }
 
 #comments {
+  #reply-title {
+    span {
+      color: $black-color;
+    }
+  }
   > h3 {
     &:first-of-type {
       @extend .section-title;
     }
   }
-  ul, ol {
+  ul,
+  ol {
     list-style-type: none;
   }
 
@@ -31,7 +37,7 @@
 }
 
 .comment-list {
-  margin: 0;
+  margin: 16px 0 0;
   padding: 0;
   list-style-type: none;
   .comment {
@@ -48,9 +54,16 @@
 
   .fn {
     font-size: 20px;
+    a {
+      color: $black-color;
+      &:hover {
+        color: $main-color;
+      }
+    }
   }
   .comment-author {
     > img {
+      border-radius: 50%;
       margin-right: 30px;
     }
   }
@@ -60,7 +73,7 @@
     position: relative;
     bottom: 18px;
     > a {
-      color: $color_brand-newspaper-x;
+      color: #ababad;
       font-family: $font__main;
       font-size: 15px;
     }
@@ -73,7 +86,7 @@
   .reply {
     @extend .comment-content;
     > a {
-      color: $color_brand-newspaper-x;
+      color: $main-color;
       font-family: $font__main;
       font-size: 15px;
       font-weight: 700;
@@ -83,6 +96,15 @@
 
 #reply-title {
   @extend .section-title;
+}
+
+#respond {
+  .logged-in-as {
+    margin: 4px 0 16px;
+  }
+  .form-submit {
+    margin-top: 16px;
+  }
 }
 
 .comment-notes {
@@ -96,6 +118,10 @@
     }
     > input {
       width: 100%;
+      border: 0;
+    }
+    textarea {
+      border: 0;
     }
   }
 }

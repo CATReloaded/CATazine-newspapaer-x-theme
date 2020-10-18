@@ -1,3 +1,6 @@
+// Remove margin of .newspaper-x-blog-sidebar, .newspaper-x-sidebar
+// by: Nahla Galal 
+
 .newspaper-x-recent-post-widget {
   display: inline-block;
   margin: 0 18px 18px 18px;
@@ -66,7 +69,6 @@
 }
 
 .newspaper-x-blog-sidebar, .newspaper-x-sidebar {
-  margin-top: 10px;
   .widget_newspaper_x_recent {
     @extend .widget-bordered;
     > h3 {

@@ -10,7 +10,7 @@
 $curauth        = get_userdata( $post->post_author );
 $enabled_author = get_theme_mod( 'newspaper_x_enable_author_box', true );
 $url            = get_the_author_meta( 'url' );
-if ( is_single() && ! empty( $curauth->description ) && $enabled_author ) { ?>
+if ( is_single() && $enabled_author ) { ?>
     <!-- Author description -->
     <div class="row author-description">
         <!-- Avatar -->

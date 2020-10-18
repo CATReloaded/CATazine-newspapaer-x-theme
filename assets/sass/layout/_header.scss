@@ -1,6 +1,6 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
-// Change navbar styles
+// Change navbar styles and Change blue color to main color (red)
 // by: Nahla Galal
 // -----------------------------------------------------------------------------
 
@@ -18,7 +18,7 @@
       &:hover,
       &:focus {
         text-decoration: none;
-        color: $color_brand-newspaper-x;
+        color: $main-color;
       }
     }
     .site-description {

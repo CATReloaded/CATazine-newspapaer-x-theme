@@ -1,3 +1,6 @@
+// Change submit btn style
+// by: Nahla Galal
+
 button,
 input[type="button"],
 input[type="reset"],
@@ -59,12 +62,17 @@ button .button {
     font-family: $font__main;
     font-size: 15px;
     font-weight: 700;
-    padding: 15px 55px;
-    background-color: $color_main-accent;
-    color: #FFF;
-    border: none;
+    padding: 11px 40px;
+    border: 2px solid $main-color;
+    color: $main-color;
+    transition: $transition;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px #EB010133;
+    background-color: transparent;
     &:hover, &:focus {
-      background-color: $color_contrast-hover;
+      background-color: $main-color;
+      color: $light-text-color;
+      border: 2px solid $main-color;
     }
     &.active {
       background-color: #333333;
