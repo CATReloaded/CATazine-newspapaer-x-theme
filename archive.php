@@ -5,6 +5,9 @@
  * @link    https://codex.wordpress.org/Template_Hierarchy
  *
  * @package Newspaper X
+ * 
+ * Remove condition of banners
+ * by: Nahla Galal
  */
 
 get_header(); ?>
@@ -59,10 +62,6 @@ global $wp_query;
 					$banner_count_index = 0;
 					while ( have_posts() ) : the_post();
 						$count ++;
-						if ( $count <= 3 ) {
-							$banner_count_index = 0;
-							continue;
-						}
 
 						if ( fmod( $banner_count_index, $banner_count ) == 0 && $banner_count_index != 0 ) {
 							?>
