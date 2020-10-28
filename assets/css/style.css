@@ -3238,6 +3238,9 @@ a {
   padding-top: 27px;
   padding-bottom: 27px;
 }
+.Navbar > img {
+  height: 45px;
+}
 .Navbar > ul {
   display: grid;
   grid-template-columns: repeat(6, auto);

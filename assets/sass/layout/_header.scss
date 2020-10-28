@@ -83,6 +83,10 @@
   align-items: center;
   padding-top: 27px;
   padding-bottom: 27px;
+  > img {
+    height: 45px;
+  }
+
   > ul {
     display: grid;
     grid-template-columns: repeat(6, auto);
