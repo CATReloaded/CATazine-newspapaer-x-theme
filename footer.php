@@ -25,12 +25,12 @@
     <div class="Footer__discover-team">
       <h2>Discover Our Team</h2>
       <ul>
-        <li><a href="<?php echo get_template_directory_uri(); ?>/home">Home</a></li>
+        <li><a href="https://www.catreloaded.org/">Home</a></li>
+        <li><a href="https://www.catreloaded.org/about">About</a></li>
         <li><a href="/CATazine">CATazine</a></li>
-        <li><a href="<?php echo get_template_directory_uri(); ?>/events">Hall Of Fame</a></li>
-        <li><a href="<?php echo get_template_directory_uri(); ?>/members">Members</a></li>
-        <li><a href="<?php echo get_template_directory_uri(); ?>/rewards">Rewards</a></li>
-        <li><a href="<?php echo get_template_directory_uri(); ?>/about">About Us</a></li>
+        <li><a href="https://www.catreloaded.org/events">Events</a></li>
+        <li><a href="https://www.catreloaded.org/members">Members</a></li>
+        <li><a href="https://www.catreloaded.org/rewards">Hall Of Fame</a></li>
       </ul>
     </div>
     <!-- Location part -->
@@ -40,7 +40,7 @@
     </div>
     <!-- Social media part -->
     <div class="Footer__contact">
-      <h2>Contact</h2>
+      <h2>Contact Us</h2>
       <ul>
         <li><a href="https://www.facebook.com/CATReloaded"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" alt="Facebook page"></a>
         </li>
@@ -52,7 +52,7 @@
         <li><a href="https://www.linkedin.com/company/cat-reloaded/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/linkedin.svg"
               alt="Linkedin profile"></a></li>
         <li class="github"><a href="https://github.com/CATReloaded"></a></li>
-        <li><a href="mailto:catreloaded-community@googlegroups.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/google+.svg"
+        <li><a href="mailto:catreloaded.support@catreloaded.net"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/google+.svg"
               alt="Google+ mail"></a></li>
       </ul>
     </div>

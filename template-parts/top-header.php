@@ -16,12 +16,12 @@
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="CAT Reloaded logo">
     <!-- Navigation items -->
     <ul>
-      <li><a href="/home.html">Home</a></li>
+      <li><a href="https://www.catreloaded.org/">Home</a></li>
+      <li><a href="https://www.catreloaded.org/about">About</a></li>
       <li class="active"><a href="/CATazine">CATazine</a></li>
-      <li><a href="<?php echo get_template_directory_uri(); ?>/events">Hall Of Fame</a></li>
-      <li><a href="<?php echo get_template_directory_uri(); ?>/members">Members</a></li>
-      <li><a href="<?php echo get_template_directory_uri(); ?>/rewards">Rewards</a></li>
-      <li><a href="<?php echo get_template_directory_uri(); ?>/about">About Us</a></li>
+      <li><a href="https://www.catreloaded.org/events">Events</a></li>
+      <li><a href="https://www.catreloaded.org/members">Members</a></li>
+      <li><a href="https://www.catreloaded.org/rewards">Hall Of Fame</a></li>
     </ul>
     <!-- Navigation hamburger menu for responsive -->
     <button class="Navbar__hamburger-menu">
